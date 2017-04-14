@@ -1,6 +1,8 @@
 <!doctype html>
 <html ng-app="myApp">
   <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.7/angular.min.js"></script>
+    <script src="js/main.js"></script>
     <script src="js/vendor/custom.modernizr.js"></script>
     <script src="js/vendor/angular.min.js"></script>
     <link rel="stylesheet" type="text/css" href="css/normalize.css" />
@@ -8,16 +10,20 @@
     <link rel="stylesheet" type="text/css" href="css/styles.css"/>
   </head>
   <body>
+    <div>
+      <input type="text" ng-model="yourName" placeHolder="Enter a name here"/>
+      <h1>Hello, {{yourName}}!</h1>
 
-    <script>
-      document.write('<script src=js/vendor/'
-        + ('__proto__' in {} ? 'zepto' : 'jquery')
-        + '.js><\/script>');
-    </script>
-    <script src="js/vendor/foundation.min.js"></script>
-    <script src="js/beginner.js"></script>
-    <script type="text/javascript">
-      $(document).foundation();
-    </script>
+      <script>
+        document.write('<script src=js/vendor/'
+          + ('__proto__' in {} ? 'zepto' : 'jquery')
+          + '.js><\/script>');
+      </script>
+      <script src="js/vendor/foundation.min.js"></script>
+      <script src="js/beginner.js"></script>
+      <script type="text/javascript">
+        $(document).foundation();
+      </script>
+    </div>
   </body>
 </html>
