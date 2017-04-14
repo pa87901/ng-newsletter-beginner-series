@@ -1,5 +1,9 @@
 var app = angular.module('myApp', []);
 
+app.run(function($rootScope) {
+  $rootScope.name = 'Ari Lerner';
+});
+
 app.controller('PlayerController', ['$scope', function($scope) {
   var audio = document.createElement('audio');
   $scope.audio = audio;
